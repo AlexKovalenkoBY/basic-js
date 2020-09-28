@@ -6,7 +6,7 @@ module.exports = function createDreamTeam(/* members */) {
   function createDreamTeam (teamList) {
     let teamName = "";
     for ( let i=0; i<teamList.length; i++ ){
-      teamName.push(teamList[i][1].toUppercase());
+      teamName.push(teamList[i][1].toUpperCase());
     }
     return teamName.sort();
   }
