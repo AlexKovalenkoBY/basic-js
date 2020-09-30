@@ -10,8 +10,10 @@ module.exports = function countCats(/* matrix */) {
     let cat = '^^';
     for (let i=0;i<cats_Array.length; i++){
       for (let j=0; j < cats_Array[i].length;j++)
-      { if ( cats_Array[i][j].toString()===cat.toString() ) {
-        cats++;
+      { if ( cats_Array[i][j].toString()==cat.toString() ) {
+        console.log(""+i+";"+j);
+        cats = cats+1;
+
       }
     } 
     }
@@ -19,4 +21,5 @@ module.exports = function countCats(/* matrix */) {
     return cats;
 
   }
+  
 };
